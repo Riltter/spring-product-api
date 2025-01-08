@@ -2,17 +2,14 @@ package com.example.springboot.controllers;
 
 import com.example.springboot.dtos.ProductRecordDto;
 import com.example.springboot.models.ProductModel;
-import com.example.springboot.repositories.ProductRepository;
 import com.example.springboot.services.ProductService;
 import jakarta.validation.Valid;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
@@ -58,7 +55,3 @@ public class ProductController {
         return ResponseEntity.status(HttpStatus.OK).body("Product deleted successfully");
     }
 }
-
-
-
-// TODO customização de erros de mensagens, colocar camada service, paginação no getAll, filtros com base no name e faixas de valores
