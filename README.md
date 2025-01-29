@@ -1,14 +1,16 @@
 # Spring Boot Product API 🛍️
 
 ## Descrição
-Este projeto é uma API RESTful construída com **Spring Boot** para gerenciar produtos, com operações CRUD (Criar, Ler, Atualizar, Excluir). A API está configurada para usar **Spring Data JPA** com **PostgreSQL** como banco de dados. A documentação da API é gerada automaticamente usando **Swagger** através do **Springdoc OpenAPI**.
+Este projeto é uma API RESTful construída com **Spring Boot** para gerenciar produtos, com operações CRUD (Criar, Ler, Atualizar, Excluir). A API está configurada para usar **Spring Data JPA** com **PostgreSQL** como banco de dados. Além disso, foi implementado um sistema de autenticação e autorização utilizando **Spring Security** e **JWT**. A documentação da API é gerada automaticamente usando **Swagger** através do **Springdoc** OpenAPI.
 
 ## Tecnologias Usadas
 - **Spring Boot 3.x**: Framework principal para a criação de aplicações Java.
 - **Spring Data JPA**: Para interagir com o banco de dados relacional (PostgreSQL).
 - **Spring Boot Starter Web**: Para construir APIs RESTful.
 - **Spring Boot Starter Validation**: Para validações de entrada, como garantir que campos obrigatórios estejam presentes.
-- **Spring Boot Starter Hateoas**: Para adicionar links HATEOAS nas respostas da API.
+- **Spring Boot Starter Hateoas**: Para adicionar links HATEOAS nas respostas da API.  
+- **Spring Security**: Para autenticação e autorização dos usuários.
+- **JWT (JSON Web Token)**: Para geração e validação de tokens de autenticação.
 - **Springdoc OpenAPI**: Para gerar e expor a documentação da API via Swagger.
 - **PostgreSQL**: Banco de dados relacional para armazenamento dos produtos.
 
