@@ -1,4 +1,4 @@
-package com.example.springboot.models;
+package com.example.springboot.domain.product;
 
 import jakarta.persistence.*;
 import org.springframework.hateoas.RepresentationModel;
