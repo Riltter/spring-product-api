@@ -1,16 +1,15 @@
 package com.example.springboot.services;
 
-import com.example.springboot.dtos.ProductRecordDto;
-import com.example.springboot.exceptions.BadRequestException;
-import com.example.springboot.exceptions.ResourceNotFoundException;
-import com.example.springboot.models.ProductModel;
+import com.example.springboot.domain.product.ProductRecordDto;
+import com.example.springboot.domain.exceptions.BadRequestException;
+import com.example.springboot.domain.exceptions.ResourceNotFoundException;
+import com.example.springboot.domain.product.ProductModel;
 import com.example.springboot.repositories.ProductRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @Service

@@ -1,16 +1,22 @@
-package com.example.springboot.models;
+package com.example.springboot.domain.response;
 
-import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Map;
 
 public class ErrorResponse {
     private String message;
     private int status;
-    private LocalDateTime timestamp;
+    private List<Map<String, String>> errors;
 
     public ErrorResponse(String message, int status) {
         this.message = message;
         this.status = status;
-        this.timestamp = LocalDateTime.now();
+    }
+
+    public ErrorResponse(String message, int status, List<Map<String, String>> errors) {
+        this.message = message;
+        this.status = status;
+        this.errors = errors;
     }
 
     public String getMessage() {
@@ -29,11 +35,11 @@ public class ErrorResponse {
         this.status = status;
     }
 
-    public LocalDateTime getTimestamp() {
-        return timestamp;
+    public List<Map<String, String>> getErrors() {
+        return errors;
     }
 
-    public void setTimestamp(LocalDateTime timestamp) {
-        this.timestamp = timestamp;
+    public void setErrors(List<Map<String, String>> errors) {
+        this.errors = errors;
     }
 }
