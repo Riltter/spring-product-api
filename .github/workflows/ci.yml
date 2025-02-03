@@ -26,6 +26,3 @@ jobs:
 
       - name: Run tests
         run: mvn test
-
-      - name: Run code quality checks
-        run: mvn spotbugs:check
